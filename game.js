@@ -4,9 +4,11 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const playerImg = new Image();
-playerImg.src = "rocket.png";
+playerImg.src = "assets/player.png";
+
 const enemyImg = new Image();
-enemyImg.src = "enemy.png";
+enemyImg.src = "assets/enemy.png";
+
 
 let player = { x: canvas.width/2 - 32, y: canvas.height - 120, w: 64, h: 64, speed: 5 };
 let bullets = [];
