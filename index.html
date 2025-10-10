@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Plane Legend V2 - 飞机传说</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="gameCanvas"></canvas>
+<div id="ui">
+  <div id="startScreen" class="screen">
+    <h1>飞机传说 V2</h1>
+    <p>点击开始 或 按 空格 开始</p>
+    <button id="startBtn" class="rect">开始游戏</button>
+  </div>
+  <div id="hud" class="hidden">
+    <div id="score">分数: 0</div>
+    <div id="lives">生命: 3</div>
+    <div id="level">关卡: 1</div>
+    <div id="audioToggle"><button id="toggleAudio" class="rect">静音/开启音乐</button></div>
+  </div>
+  <div id="gameOverScreen" class="screen hidden">
+    <h2>游戏结束</h2>
+    <p id="finalScore">得分: 0</p>
+    <p id="bestScore">最高分: 0</p>
+    <button id="restartBtn" class="rect">重新开始</button>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
